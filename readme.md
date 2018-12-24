@@ -1,3 +1,15 @@
+# File describtion
+![image](https://user-images.githubusercontent.com/33209778/50393910-ab323e00-079c-11e9-9119-cd432e447a18.png)  
+
+*.ttf : font file
+draw_CNN.ipynb : draw figure of CNN
+font_conv.py : train network
+font_conv_test.py : test
+font_convnet_real.ipynb : test in jupyter notebook(use finally)
+hangul_unicode.ipynb : font file to font image
+trainset.txt, testset.txt : train, test image dir
+testset2.txt : input image dir for prediciton
+
 # Font Conversion Convolutional Network
 ## [1] Dataset
 ### a. 64 * 64 미생체 폰트 이미지 (11172자 지원): 입력 데이터로 사용
