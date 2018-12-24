@@ -1,7 +1,7 @@
 # File describtion
 ![image](https://user-images.githubusercontent.com/33209778/50393910-ab323e00-079c-11e9-9119-cd432e447a18.png)  
 
-*.ttf : font file
+*.ttf : font file  
 draw_CNN.ipynb : draw figure of CNN  
 font_conv.py : train network  
 font_conv_test.py : test  
