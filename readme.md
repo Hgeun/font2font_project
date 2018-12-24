@@ -12,12 +12,17 @@
 -> 연성체 지원 글자에 맞추어 train, test (4:1) 진행.  
 -> 연성체 지원 글자가 아닌 글자를 미생체로 입력하여 출력을 정성적 확인.  
 
-
-
 ## [2] Network
 ### a. layer5
+![image](https://user-images.githubusercontent.com/33209778/50393348-06623180-0799-11e9-9735-8917a2d43821.png)
+
 ### b. layer10
+![image](https://user-images.githubusercontent.com/33209778/50393357-10843000-0799-11e9-9c99-2cf1ad20ce12.png)
+![image](https://user-images.githubusercontent.com/33209778/50393358-137f2080-0799-11e9-9bc4-af2e0b4de574.png)
+
 ### c. loss function, optimizer
+Loss function: input font와 target font사이 2D L1 Loss 사용  
+Optimizer: Adam 알고리즘 사용  
 
 ## [3] Result
 모든 결과에서 학습 epoch이 더 적음에도 비교적 layer가 깊을 때 정성적으로 더 잘 conversion되는 것을 확인할 수 있습니다.  
@@ -28,11 +33,39 @@ Layer10의 학습을 더 오래 시킨다면 더 적어질 가능성이 보입�
 300 epoch training  
 minimum training L1 loss = 0.13  
 testing L1 loss = 0.146  
-
+  
+| content | font image |
+|---------|------------|
+| Input   |  ![image](https://user-images.githubusercontent.com/33209778/50393505-01ea4880-079a-11e9-848a-97b06b5648bd.png)  |
+| Output  |  ![image](https://user-images.githubusercontent.com/33209778/50393541-470e7a80-079a-11e9-83b2-89c7d2c9ad07.png)  |
+| Target  |  ![image](https://user-images.githubusercontent.com/33209778/50393530-39f18b80-079a-11e9-94b0-4e5f00b2d3ba.png)  |
+  
 #### 2) layer10
 114 epoch training  
-minimum training L1 loss = 0.098
-testing L1 loss = 0.130
-
+minimum training L1 loss = 0.098  
+testing L1 loss = 0.130  
+  
+| content | font image |
+|---------|------------|
+| Input   |  ![image](https://user-images.githubusercontent.com/33209778/50393505-01ea4880-079a-11e9-848a-97b06b5648bd.png)  |
+| Output  |  ![image](https://user-images.githubusercontent.com/33209778/50393564-6b6a5700-079a-11e9-9766-2c63d48c5860.png)  |
+| Target  |  ![image](https://user-images.githubusercontent.com/33209778/50393530-39f18b80-079a-11e9-94b0-4e5f00b2d3ba.png)  |
+  
+  
 #### 3) layer10
-2000 epoch training
+2000 epoch training  
+  
+| content | font image |
+|---------|------------|
+| Input   |  ![image](https://user-images.githubusercontent.com/33209778/50393505-01ea4880-079a-11e9-848a-97b06b5648bd.png)       |
+| Output  |    ![image](https://user-images.githubusercontent.com/33209778/50393694-488c7280-079b-11e9-8671-b9749c486729.png)    |
+| Target  |        ![image](https://user-images.githubusercontent.com/33209778/50393530-39f18b80-079a-11e9-94b0-4e5f00b2d3ba.png)  |
+  
+### b. prediction (only misaeng supporting)
+  
+| content | font image |
+|---------|------------|
+|  Input  |  ![image](https://user-images.githubusercontent.com/33209778/50393763-c18bca00-079b-11e9-9d34-779d2c54c69f.png)  |
+|  Layer5  |  ![image](https://user-images.githubusercontent.com/33209778/50393783-f435c280-079b-11e9-9bf8-58a54252a99f.png)  |
+|  Layer10, epoch100  |  ![image](https://user-images.githubusercontent.com/33209778/50393801-16c7db80-079c-11e9-8e40-95f59da9d43c.png)  |
+|  Layer10, epoch2000  |  ![image](https://user-images.githubusercontent.com/33209778/50393805-1deee980-079c-11e9-85a4-56385aa2f4d4.png)  |
