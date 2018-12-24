@@ -1,0 +1,5 @@
+D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\44075.jpg D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\44075.jpg
+D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\44825.jpg D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\44825.jpg
+D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\48919.jpg D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\48919.jpg
+D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\52695.jpg D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\52695.jpg
+D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\54881.jpg D:\03_code\18_2_image_processing\fontConvNet-master\only_misaeng\44075.jpg
